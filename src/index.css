@@ -1,13 +1,29 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* App.css */
+
+/* Style for the unchecked radio button */
+input[type="radio"] {
+ 
+  -webkit-appearance: none; 
+  appearance: none;
+  width: 18px; 
+  height: 18px;
+  border: 2px solid #236175; 
+  border-radius: 50%; 
+  outline: none; 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Style for the checked radio button */
+input[type="radio"]:checked:after {
+  content: "";
+  width: 10px; 
+  height: 10px; 
+  background-color: #236175; 
+  border-radius: 50%; 
+  display: block;
+  margin: 2px; 
+}
+
+
+body{
+  text-align: right;
 }
